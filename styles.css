@@ -1,0 +1,172 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden ;
+}
+
+/*----navbar----*/
+
+.icon {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+}
+
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 100;
+}
+nav a {
+    float: right;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .btn {
+    float: right; 
+    position: relative;
+    top: 15px; 
+    text-align: center;
+    border-radius: 10px;
+    background-color: #4c64ff;
+    color: #ffffff;
+    border: #4c64ff;
+}
+
+/*------hero-section----*/
+
+
+
+.hero-container img {
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+    
+.hero-text {
+    display: block;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2vw;
+    text-align: center;
+}
+
+button {
+    background-color: #4c64ff;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;    
+}
+
+/*------main------*/
+
+.img-student {
+    width: 50%;
+    height: auto;
+    border-radius: 13%;
+    padding: 30px;
+}
+
+.main-box {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding-left: 4rem;
+}
+
+
+/*vad säger våra studenter*/
+.boxar {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "box1 box1 box1"
+        "box2 box2 box2";
+    grid-gap: 1rem;
+    padding-top: 1rem;
+    padding: 10rem;
+}
+
+.boxar h1 {
+    grid-area: box1;
+    text-align: center;
+}
+.box1, .box2, .box3 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 80%;
+    height: 20rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/*---ansök---*/
+
+.ansök {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ansök h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+/*-----footer-----*/
+
+.footer {
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+    background-color: aqua;
+
+    box-sizing: border-box; 
+
+}
+
+.space { 
+    margin-top: 10px;
+    display: block;
+}
+
+.icon2 {
+    width: 20%;
+    height: auto;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+/*---att fixa----
+* Padding reagaerar inte på bakgrundsfärg hur fixar jag det ? 
+* Texten ovanför rutan hamnar utanför bilden hur fixar jag den ?
+*/
