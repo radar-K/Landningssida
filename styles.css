@@ -83,10 +83,18 @@ button {
     height: auto;
     border-radius: 13%;
     padding: 30px;
+    grid-column: 1;
+    background-color: #4c64ff;
+}
+
+.text {
+    grid-column: 2;
+    background-color: #4c64ff;
 }
 
 .main-box {
-    display: flex;
+    display: grid;
+    grid-column: 4fr 4fr;
     align-items: center;
     width: 80%;
     padding-left: 4rem;
@@ -169,4 +177,5 @@ ul {
 /*---att fixa----
 * Padding reagaerar inte på bakgrundsfärg hur fixar jag det ? 
 * Texten ovanför rutan hamnar utanför bilden hur fixar jag den ?
+* Lär känna oss och bild, hur gör jag dem större och närmare varandra?
 */
